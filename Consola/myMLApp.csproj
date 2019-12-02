@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="myMLAppML.ConsoleApp\**" />
+    <Compile Remove="myMLAppML.Model\**" />
+    <EmbeddedResource Remove="myMLAppML.ConsoleApp\**" />
+    <EmbeddedResource Remove="myMLAppML.Model\**" />
+    <None Remove="myMLAppML.ConsoleApp\**" />
+    <None Remove="myMLAppML.Model\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\myMLAppML.Model\myMLAppML.Model.csproj" />
+  </ItemGroup>
+
+</Project>
